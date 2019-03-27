@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Oswald:400,500,700");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  padding: 120px 0;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Oswald", sans-serif;
+    font-weight: 400 !important;
+  }
+}
+
+#top-bar {
+  background: #001362;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+}
+
+.navbar-nav {
+  li a {
+    font-weight: bold;
+    font-size: 14px;
+    padding-right: 0;
+    padding-left: 1.5rem !important;
+  }
+}
+
+.heading-divider {
+  height: 2px;
+  width: 44px;
+  background: #f48a18;
+  margin: auto;
+}
+
+#slider {
+    padding: 2rem 0;
+    min-height: 100vh;
+    
+    img {
+        width: 100%;
+        max-height: 100vh;
+    }
+}
+
+#about-us {
+  .card {
+    border: none;
+    padding: 0;
+    img {
+      transition: 0.9s;
+      margin-bottom: 0.6rem;
+    }
+    img:hover {
+      transform: scale(1.34);
+    }
+    .card-body {
+      padding: 1rem;
+      a {
+        color: #000;
+        font-size: 19px;
+      }
+      .card-text {
+        font-size: 14px;
+        text-align: justify;
+      }
+    }
+  }
+}
+
+#academic {
+  h3 {
+    small {
+      font-size: 14px;
+    }
+  }
+  .card {
+    border: none;
+
+    .feature--1 {
+      border-bottom: 5px solid #001362;
+    }
+
+    .feature--2 {
+      border-bottom: 5px solid #f48a18;
+    }
+    .feature--3 {
+      border-bottom: 5px solid #30a8cc;
+    }
+
+    .card-body {
+      padding: 1.5rem 0;
+      a {
+        font-size: 22px;
+        color: #4e4e4e;
+      }
+
+      .heading-divider {
+        margin: 0 4px;
+      }
+    }
+  }
+}
+
+#testimonial {
+  background: #242f4b;
+  padding: 2rem 0;
+}
+
+#news {
+  .owl-carousel .owl-nav {
+    display: block;
+  }
+  .item {
+    .main-item {
+      background: #f8f8f8;
+
+      .meta {
+        i {
+          font-size: 15px;
+          color: orange;
+        }
+        ul li {
+          padding: 0 0.9rem;
+        }
+      }
+    }
+    .bca {
+      background: url("../img/bca.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .bbm {
+      background: url("../img/bbm.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .farewell {
+      background: url("../img/Fairwell-Science-570x570.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .slider-image {
+      display: flex;
+      align-items: flex-end;
+      height: 400px;
+      width: 356px !important;
+
+      .fontawesome {
+        i {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          background: #001362;
+          color: #fff;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+      }
+      .date {
+        background: orange;
+        color: #fff;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+        padding: 0px 24px;
+      }
+    }
+  }
+}
+
+#footer-area {
+  background: #1a1a1a;
+  color: #fff;
+
+  .border-bottom {
+    padding: 1rem 0;
+    border-bottom: 1px solid #d1cdcd;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    i {
+      width: 36px;
+      height: 36px;
+      line-height: 36px;
+      text-align: center;
+      border-radius: 50%;
+      background: #444;
+      color: #fff;
+    }
+  }
+
+  .footer-widget {
+    .heading-divider {
+      margin: 0 4px;
+    }
+
+    .address {
+      color: #8f8f8f;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          display: flex;
+
+          p {
+            padding-top: 0;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+    .icons {
+      padding-top: 40px;
+      .nav-link {
+        padding: 0;
+        padding-right: 1rem;
+      }
+      i {
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        text-align: center;
+        border-radius: 50%;
+        background: #444;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#footer {
+ 
+  padding: 0;
+  background: #1a1a1a;
+  color: #fff;
+
+  .container {
+    padding: 1.5rem 0;
+    border-top: 1px solid #fff;
+
+    .nav {
+        a {
+            color: #fff;
+            font-size: 15px;
+        }
+    }
+  }
+}
