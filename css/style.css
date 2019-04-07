@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald:400,500,700");
 body {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 section {
@@ -25,11 +26,37 @@ section h6 {
   line-height: 50px;
 }
 
-.navbar-nav li a {
-  font-weight: bold;
-  font-size: 14px;
-  padding-right: 0;
-  padding-left: 1.5rem !important;
+.bg-light {
+  background: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.navbar-light .navbar-nav .nav-link::before,
+.navbar-light .navbar-nav .nav-link::before {
+  content: "";
+  text-decoration: none;
+  background-color: #f48a18;
+  position: relative;
+  width: 0%;
+  transition: 0.6s;
+  top: 96%;
+  height: 3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.navbar-light .navbar-nav .nav-link:focus:before,
+.navbar-light .navbar-nav .nav-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
 }
 
 .heading-divider {
@@ -62,7 +89,7 @@ section h6 {
 
 #about-us .card img:hover {
   -webkit-transform: scale(1.34);
-          transform: scale(1.34);
+  transform: scale(1.34);
 }
 
 #about-us .card .card-body {
@@ -117,6 +144,13 @@ section h6 {
   padding: 2rem 0;
 }
 
+#testimonial .nav-pills {
+  padding-top: 3rem;
+}
+
+#testimonial .nav-pills .nav-link.active {
+  background-color: transparent;
+}
 #news .owl-carousel .owl-nav {
   display: block;
 }
@@ -157,10 +191,9 @@ section h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   height: 400px;
-  width: 356px !important;
 }
 
 #news .item .slider-image .fontawesome i {
@@ -197,11 +230,11 @@ section h6 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100%;
 }
 
